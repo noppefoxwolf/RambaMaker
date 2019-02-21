@@ -1,0 +1,35 @@
+### Headers settings
+company: DeNA
+
+### Xcode project settings
+project_name: ios
+prefix: 
+xcodeproj_path: {{ xcodeproj_path }}
+
+### Code generation settings section
+# The main project target name
+project_target: {{ project_target }}
+
+# The file path for new modules
+project_file_path: {{ project_target }}/Feature
+
+# The Xcode group path to new modules
+project_group_path: {{ project_target }}/Feature
+
+### Tests generation settings section
+# The tests target name
+test_target: {{ project_target }}Tests
+
+# The file path for new tests
+test_file_path: {{ project_target }}Tests/Feature
+
+# The Xcode group path to new tests
+test_group_path: {{ project_target }}Tests/Feature
+
+### Dependencies settings section
+podfile_path: Podfile 
+cartfile_path: Cartfile
+
+### Templates
+templates:
+- {name: swifty_viper}
